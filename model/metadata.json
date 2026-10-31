@@ -1,0 +1,145 @@
+{
+    "dataset_name": "Kaggle Telco Customer Churn Dataset",
+    "dataset_url": "https://www.kaggle.com/datasets/blastchar/telco-customer-churn",
+    "feature_columns": [
+        "gender",
+        "SeniorCitizen",
+        "Partner",
+        "Dependents",
+        "tenure",
+        "PhoneService",
+        "MultipleLines",
+        "InternetService",
+        "OnlineSecurity",
+        "OnlineBackup",
+        "DeviceProtection",
+        "TechSupport",
+        "StreamingTV",
+        "StreamingMovies",
+        "Contract",
+        "PaperlessBilling",
+        "PaymentMethod",
+        "MonthlyCharges",
+        "TotalCharges"
+    ],
+    "target_column": "Churn",
+    "n_total_instances": 7043,
+    "n_train_instances": 5634,
+    "n_test_instances": 1409,
+    "n_features": 19,
+    "encoding_maps": {
+        "gender": {
+            "Female": 0,
+            "Male": 1
+        },
+        "Partner": {
+            "No": 0,
+            "Yes": 1
+        },
+        "Dependents": {
+            "No": 0,
+            "Yes": 1
+        },
+        "PhoneService": {
+            "No": 0,
+            "Yes": 1
+        },
+        "MultipleLines": {
+            "No phone service": 0,
+            "No": 1,
+            "Yes": 2
+        },
+        "InternetService": {
+            "No": 0,
+            "DSL": 1,
+            "Fiber optic": 2
+        },
+        "OnlineSecurity": {
+            "No internet service": 0,
+            "No": 1,
+            "Yes": 2
+        },
+        "OnlineBackup": {
+            "No internet service": 0,
+            "No": 1,
+            "Yes": 2
+        },
+        "DeviceProtection": {
+            "No internet service": 0,
+            "No": 1,
+            "Yes": 2
+        },
+        "TechSupport": {
+            "No internet service": 0,
+            "No": 1,
+            "Yes": 2
+        },
+        "StreamingTV": {
+            "No internet service": 0,
+            "No": 1,
+            "Yes": 2
+        },
+        "StreamingMovies": {
+            "No internet service": 0,
+            "No": 1,
+            "Yes": 2
+        },
+        "Contract": {
+            "Month-to-month": 0,
+            "One year": 1,
+            "Two year": 2
+        },
+        "PaperlessBilling": {
+            "No": 0,
+            "Yes": 1
+        },
+        "PaymentMethod": {
+            "Electronic check": 0,
+            "Mailed check": 1,
+            "Bank transfer (automatic)": 2,
+            "Credit card (automatic)": 3
+        }
+    },
+    "baseline_metrics": {
+        "Logistic Regression": {
+            "Accuracy": 0.7984,
+            "AUC": 0.8469,
+            "Precision": 0.6372,
+            "Recall": 0.5588,
+            "F1": 0.5954,
+            "MCC": 0.4638
+        },
+        "Decision Tree": {
+            "Accuracy": 0.7828,
+            "AUC": 0.8291,
+            "Precision": 0.6172,
+            "Recall": 0.4786,
+            "F1": 0.5392,
+            "MCC": 0.4056
+        },
+        "KNN": {
+            "Accuracy": 0.7715,
+            "AUC": 0.8281,
+            "Precision": 0.5707,
+            "Recall": 0.5615,
+            "F1": 0.566,
+            "MCC": 0.411
+        },
+        "Naive Bayes": {
+            "Accuracy": 0.7289,
+            "AUC": 0.8262,
+            "Precision": 0.4934,
+            "Recall": 0.7968,
+            "F1": 0.6094,
+            "MCC": 0.4471
+        },
+        "Support Vector Machine": {
+            "Accuracy": 0.8013,
+            "AUC": 0.8066,
+            "Precision": 0.6691,
+            "Recall": 0.4973,
+            "F1": 0.5706,
+            "MCC": 0.4532
+        }
+    }
+}
